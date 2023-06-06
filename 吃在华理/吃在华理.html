@@ -30,8 +30,17 @@
     <ul>
       <li class="list">
         <div class="list-div list-text-1">&nbsp;&nbsp;食堂档口</div>
-        <div class="list-div list-pic"><img src="../吃在华理/feature1_image1.jpg" alt="Feature 1 Image 1" class="slide"><br>
-          <img src="../吃在华理/feature1_image2.jpg" alt="Feature 1 Image 2" class="slide"></div>
+        <div class="list-div slide_1"><img src="../吃在华理/feature1_image1.jpg" alt="Feature 1 Image 1"> <img src="../吃在华理/feature1_image2.jpg" alt="Feature 1 Image 2"></div>
+        <script>
+			  const images_1 = document.querySelectorAll('.slide_1 img');
+			  let imgIndex_1 = 0;
+     		  function showNextImage() {
+  			  images_1[imgIndex_1].classList.remove('active');
+   			  imgIndex_1 = (imgIndex_1 + 1) % images_1.length;
+  			  images_1[imgIndex_1].classList.add('active');
+		 	  }
+			  setInterval(showNextImage, 3000);
+		</script>
       </li>
       <li class="list">
         <div class="list-div list-pic"><img src="../吃在华理/feature2_image2.jpg" alt="Feature 2 Image 2"></div>
@@ -42,12 +51,22 @@
         <div class="list-div list-pic"><img src="../吃在华理/feature3_image1.jpg" alt="Feature 3 Image 1"></div>
       </li>
       <li class="list">
-        <div class="list-div list-pic" style="height: 800px !important;"><img src="../吃在华理/feature4_image1.jpg" alt="Feature 4 Image 1" class="slide"> <img src="../吃在华理/feature4_image2.jpg" alt="Feature 4 Image 2" class="slide"></div>
+        <div class="list-div slide_2" style="height: 1000px !important;"><img src="../吃在华理/feature4_image1.jpg" alt="Feature 4 Image 1"> <img src="../吃在华理/feature4_image2.jpg" alt="Feature 4 Image 2"></div>
         <div class="list-div list-text-2">&nbsp;&nbsp;咖啡屋</div>
+		<script>
+			  const images_2 = document.querySelectorAll('.slide_2 img');
+			  let imgIndex_2 = 0;
+     		  function showNextImage() {
+  			  images_2[imgIndex_2].classList.remove('active');
+   			  imgIndex_2 = (imgIndex_2 + 1) % images_2.length;
+  			  images_2[imgIndex_2].classList.add('active');
+		 	  }
+			  setInterval(showNextImage, 3000);
+		</script>
       </li>
       <li class="list">
         <div class="list-div list-text-1">&nbsp;&nbsp;黑街</div>
-        <div class="list-div list-pic" style="height: 900px !important;"><img src="../吃在华理/feature5_image1.jpg" alt="Feature 5 Image 1"> </div>
+        <div class="list-div list-pic"><img src="../吃在华理/feature5_image1.jpg" alt="Feature 5 Image 1"> </div>
       </li>
     </ul>
     <h2>同学简介</h2>

@@ -31,7 +31,7 @@ h1 {
   margin-bottom: 20px;
 }
 .container img {
-    width: 700px;
+  width: 700px;
 }
 /* Navbar styles */
 .navbar {
@@ -126,14 +126,33 @@ h1 {
   padding-left: 80px;
 }
 .list-pic {
-	overflow-y: scroll;
-	height: 550px;
-	
+  overflow: hidden;
+  height: auto;
 }
 .list-pic img {
-	width: 100%;
+  width: 100%;
+  border-radius: 5px;
 }
-
-.huali-image img{
-	width: 400px;
+.huali-image img {
+  width: 400px;
+}
+.slide_1, .slide_2 {
+  position: relative;
+  height: 600px;
+  overflow: hidden;
+}
+.slide_1 img, .slide_2 img {
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+.slide_1 img.active {
+  opacity: 0;
+}
+.slide_2 img.active {
+  opacity: 0;
 }
