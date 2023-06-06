@@ -24,7 +24,16 @@
     <div class="container">
       <h1>华理，花梨gogogo！</h1>
       <p>欢迎来到华东理工大学，欣赏她的美丽</p>
-      <a href="视频窗口/视频播放.html" class="btn">冲冲冲</a> </div>
+      <p class="btn" onclick="openPlayer()">冲冲冲</p>
+    </div>
+    <div id="getplayer" class="overPlayer">
+		<div class="player">
+			<div class="close-btn" id="closebtn" onclick="closePlayer()">&times;</div>
+			<video src="videos/video.mp4" id="myVideo" controls>
+				Your browser does not support the video tag.
+			</video>
+		</div>
+	</div>
   </div>
 </header>
 <section class="section">
@@ -96,5 +105,27 @@
     </div>
   </div>
 </footer>
+<script> 
+	  function openPlayer() {
+		  document.getElementById("getplayer").style.display = "flex";
+	  }
+	  function closePlayer() {
+		  var video = document.getElementById('myVideo');
+  		  video.pause();
+		  document.getElementById("getplayer").style.display = "none";
+		  playPause();
+	  }
+	  var r_name = document.getElementById('closebtn');
+
+	  	r_name.addEventListener('mouseover', function() {
+			r_name.classList.remove('rotate_2');
+  			r_name.classList.add('rotate_1');
+	  	});
+
+	  	r_name.addEventListener('mouseout', function() {
+  			r_name.classList.remove('rotate_1');
+  			r_name.classList.add('rotate_2');
+		});
+  </script>
 </body>
 </html>

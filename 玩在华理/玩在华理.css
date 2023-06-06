@@ -1,19 +1,15 @@
-/* CSS样式 */
-/* 重置默认样式 */
+/* Reset default browser styles */
 * {
-    box-sizing: border-box;
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-left: 0px;
-    margin-bottom: 0px;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-/* 头部样式 */
-header {
-  background-color: #000;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  background-color: #FFFFFF;
+  padding-top: 40px;
 }
 /* 页面主体 */
 main {
@@ -29,19 +25,22 @@ h1 {
 /*图片 */
 .image-container img{
 	border-radius: 5px;
+	margin: 0 auto;
+	width: 100%;
 }
 .huali-image img {
   width: 400px;
   display: block;
   margin: 0 auto;
+  padding-top: 48px;
 }
 /* 特性列表 */
-ul {
+main ul {
   list-style-type: none;
   padding: 0;
   margin-bottom: 20px;
 }
-li {
+main li {
   margin-bottom: 10px;
 	display: block;
 }
@@ -113,10 +112,10 @@ li {
 	text-shadow: 1px 1px #0f0f0f;
 	font-family: NSimSun;
 	color: #FFFFFF;
-	padding: 8px;
+	padding: 2px 8px;
 	overflow: visible;
 	position: absolute;
 	float: none;
 	font-size: 58px;
-	margin-bottom: 10px;
+	line-height: 64px;
 }
