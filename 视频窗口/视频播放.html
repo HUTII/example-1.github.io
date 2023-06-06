@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>视频播放器</title>
+   <style>
+     /* 省略其他样式 */
+     
+     /* 弹窗样式 */
+     .modal {
+       display: none;
+       position: fixed;
+       z-index: 1;
+       left: 0;
+       top: 0;
+       width: 100%;
+       height: 100%;
+       overflow: auto;
+       background-color: rgba(0, 0, 0, 0.6);
+     }
+ 
+     .modal-content {
+       margin: 10% auto;
+       width: 80%;
+       max-width: 600px;
+       background-color: #fff;
+       padding: 20px;
+       text-align: center;
+       border-radius: 8px;
+     }
+ 
+     .modal img {
+       max-width: 100%;
+       height: auto;
+       border-radius: 8px;
+       margin-bottom: 20px;
+     }
+ 
+     .close-button {
+       background-color: #2196f3;
+       color: #fff;
+       border: none;
+       padding: 10px 20px;
+       font-size: 16px;
+       border-radius: 4px;
+       cursor: pointer;
+     }
+ 
+     .close-button:hover {
+       background-color: #0d8bf0;
+     }
+   </style>
+ 
+  <style>
+    /* 播放器容器 */
+    .video-player {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* 视频播放器样式 */
+    .video-player video {
+      width: 100%;
+      display: block;
+      border-radius: 8px;
+    }
+
+    /* 控制按钮样式 */
+    .video-controls {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    .video-controls button {
+      margin: 0 5px;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      background-color: #2196f3;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .video-controls button:hover {
+      background-color: #0d8bf0;
+    }
+
+    /* 页眉样式 */
+    header {
+      background-color: #555;
+      color: #ggg;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* 页脚样式 */
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      font-size: 12px;
+    }
+
+    /* 装饰元素样式 */
+    .decorative-element {
+      width: 100%;
+      height: 10px;
+      background-color: #2196f3;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>华东理工大学</h1>
+  </header>
+
+  <div class="video-player">
+    <video src="vedio.mp4" controls></video>
+    <div class="video-controls">
+      <button onclick="playPause()">播放/暂停</button>
+      <button onclick="skipForward(5)">快进</button>
+      <button onclick="skipBackward(5)">快退</button>
+      <button onclick="muteUnmute()">静音/取消静音</button>
+    </div>
+  </div>
+
+  <div class="decorative-element"></div>
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <img src="aaa.jpg" alt="Image 1">
+      <button class="close-button" onclick="closeModal('modal1')">关闭</button>
+    </div>
+  </div>
+
+  <!-- 第二个弹窗 -->
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <img src="fuck.jpg" alt="Image 2">
+      <button class="close-button" onclick="closeModal('modal2')">关闭</button>
+    </div>
+  </div>
+  <footer>
+华东理工大学计算机职业实践小组
+  </footer>
+
+  <script>
+    // JavaScript代码可以放在页面底部或外部文件中
+
+    var video = document.querySelector('video');
+
+    function playPause() {
+      if (video.paused) {
+        video.play();
+      } else {
+        video.pause();
+      }
+    }
+
+    function skipForward(seconds) {
+      video.currentTime += seconds;
+    }
+
+    function skipBackward(seconds) {
+      video.currentTime -= seconds;
+    }
+
+    function muteUnmute() {
+      video.muted = !video.muted;
+    }
+  </script>
+  
+    <script>
+      // JavaScript代码可以放在页面底部或外部文件中
+  
+      // 打开弹窗
+      function openModal(modalId) {
+        var modal = document.getElementById(modalId);
+        modal.style.display = 'block';
+      }
+  
+      // 关闭弹窗
+      function closeModal(modalId) {
+        var modal = document.getElementById(modalId);
+        modal.style.display = 'none';
+      }
+    </script>
+</body>
+</html>

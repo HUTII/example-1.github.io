@@ -1,0 +1,102 @@
+/* CSS样式 */
+/* 重置默认样式 */
+* {
+    box-sizing: border-box;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    padding: 0;
+}
+/* 头部样式 */
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+/* 页面主体 */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+/* 标题 */
+h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+/*图片 */
+.image-container img{
+	border-radius: 5px;
+}
+.huali-image img {
+  display: block;
+  margin: 0 auto;
+}
+/* 特性列表 */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+li {
+  margin-bottom: 10px;
+	display: block;
+}
+/* 底部样式 */
+footer {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+.navbar {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding-top: 0;
+}
+.navbar-brand img {
+  height: 40px;
+  vertical-align: middle;
+}
+.navbar-menu {
+  margin-top: 0;
+  text-align: center;
+  padding: 5px;
+}
+.navbar-menu li {
+  display: inline-block;
+  position: relative;
+  margin: 10px;
+}
+.navbar-menu li a {
+  color: #005C97;
+  text-decoration: none;
+  font-size: 19px;
+}
+.navbar-menu li a:hover {
+  color: #006DB3;
+}
+.head {
+	padding-bottom: 10px;
+}
+.introduction p {
+	fontsize: 30px;
+	line-height: 40px;
+}
+.list-text{
+	text-shadow: 1px 1px #0f0f0f;
+	font-family: NSimSun;
+	color: #4686DF;
+	padding: 8px;
+	overflow: visible;
+	position: absolute;
+	float: none;
+	font-size: 58px;
+	margin-bottom: 10px;
+}
