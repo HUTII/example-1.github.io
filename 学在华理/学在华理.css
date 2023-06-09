@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 /* Body styles */
 body {
   font-family: Arial, sans-serif;
@@ -11,6 +12,7 @@ body {
   background-color: #f8f8f8;
   padding-top: 40px;
 }
+
 /* Navbar styles */
 .navbar {
   background-color: #fff;
@@ -22,36 +24,44 @@ body {
   z-index: 100;
   padding-top: 0;
 }
+
 .navbar-brand img {
   height: 40px;
   vertical-align: middle;
 }
+
 .navbar-menu {
   margin-top: 0;
   text-align: center;
   padding: 5px;
 }
+
 .navbar-menu li {
   display: inline-block;
   position: relative;
   margin: 10px;
 }
+
 .navbar-menu li a {
   color: #005C97;
   text-decoration: none;
   font-size: 19px;
 }
+
 .navbar-menu li a:hover {
   color: #006DB3;
 }
+
 .content {
   display: flex;
   margin-top: 20px;
   padding: 20px;
 }
+
 .left {
   width: 50%;
 }
+
 .right {
   background: url("theme_1_bg_2x.0.3.png");
   background-repeat: repeat;
@@ -59,40 +69,47 @@ body {
   width: 50%;
   font-family: STXingkai;
   writing-mode: vertical-rl;
-  padding-right: 200px;
+  padding-right: 10%;
   padding-top: 20px;
 }
+
 .left img {
   width: 100%;
   height: auto;
   margin-top: 10px;
-  border-radius: 5px; /* 图片圆角边框 */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* 图片阴影效果 */
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
+
 .right p {
   margin-bottom: 10px;
-  line-height: 2.5; /* 段落行高 */
-  font-size: 23px; /* 段落字体大小 */
-  color: #333; /* 段落文字颜色 */
+  line-height: 3.5;
+  font-size: 23px;
+  color: #333;
 }
+
 .footer-menu {
   list-style-type: none;
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
 }
+
 .footer-menu li {
   margin-right: 10px;
 }
+
 .footer-menu li a {
   color: #999;
   text-decoration: none;
   font-size: 14px;
   transition: color 0.3s ease;
 }
+
 .footer-menu li a:hover {
   color: #555;
 }
+
 .footer-bottom {
   text-align: center;
   color: #999;

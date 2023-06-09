@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 /* Body styles */
 body {
   font-family: Arial, sans-serif;
@@ -11,6 +12,11 @@ body {
   background-color: #f8f8f8;
   padding-top: 40px;
 }
+
+img {
+  border-radius: 5px;
+}
+
 /* Navbar styles */
 .navbar {
   background-color: #fff;
@@ -22,50 +28,61 @@ body {
   z-index: 100;
   padding-top: 0;
 }
+
 .navbar-brand img {
   height: 40px;
   vertical-align: middle;
 }
+
 .navbar-menu {
   margin-top: 0;
   text-align: center;
   padding: 5px;
 }
+
 .navbar-menu li {
   display: inline-block;
   position: relative;
   margin: 10px;
 }
+
 .navbar-menu li a {
   color: #005C97;
   text-decoration: none;
   font-size: 19px;
 }
+
 .navbar-menu li a:hover {
   color: #006DB3;
 }
+
 .logo {
   flex: 1;
 }
+
 .logo a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
   font-size: 20px;
 }
+
 /* Banner Styles */
 .banner {
   background-color: #f2f2f2;
   padding: 40px;
   text-align: center;
 }
+
 .banner h1 {
   font-size: 32px;
   margin-bottom: 20px;
 }
+
 .banner p {
   margin-bottom: 40px;
 }
+
 .btn {
   background-color: #333;
   color: #fff;
@@ -73,35 +90,44 @@ body {
   border-radius: 5px;
   text-decoration: none;
 }
+
 /* Products Styles */
 .products {
   text-align: center;
 }
+
 .products h2 {
   font-size: 24px;
   margin-bottom: 20px;
 }
+
 .product-grid {
-  background-color: #FFFACD; /* 添加柠檬黄的背景颜色 */
+  background-color: #FFFACD;
+  background-image: url("background.png");
   display: flex;
-  padding: 40px;
+  padding: 0 40px;
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .product-item {
   margin: 20px;
 }
+
 .product-item img {
   width: 200px;
   height: auto;
 }
+
 .product-item h3 {
   font-size: 20px;
   margin: 10px 0;
 }
+
 .product-item p {
   margin-bottom: 20px;
 }
+
 /* Footer Styles */
 .footer-menu {
   list-style-type: none;
@@ -109,25 +135,37 @@ body {
   justify-content: center;
   margin-bottom: 20px;
 }
+
 .footer-menu li {
   margin-right: 10px;
 }
+
 .footer-menu li a {
   color: #999;
   text-decoration: none;
   font-size: 14px;
   transition: color 0.3s ease;
 }
+
 .footer-menu li a:hover {
   color: #555;
 }
+
 .footer-bottom {
   text-align: center;
   color: #999;
   font-size: 14px;
 }
-/* Navigation Styles */
+
 /* Body Styles */
 body {
   font-family: Arial, sans-serif;
+}
+
+.product-background {
+  background-color: #FFFACD;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 10px;
 }
