@@ -68,10 +68,17 @@ h1 {
   margin-bottom: 20px;
 }
 
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .image-container img {
   border-radius: 5px;
   margin: 0 auto;
-  width: 100%;
+  width: 85%;
+  margin: 10px auto;
 }
 
 .huali-image img {
@@ -90,6 +97,7 @@ main ul {
 main li {
   margin-bottom: 10px;
   display: block;
+  position: relative;
 }
 
 /* Footer styles */
@@ -126,6 +134,21 @@ footer {
 }
 
 /* Additional styles */
+.head-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.head-img img {
+  width: 62%;
+}
+
+.introduction {
+  display: flex;
+  justify-content: center;
+}
+
 .introduction p {
   font-size: 1em;
   line-height: 200%;
@@ -135,10 +158,18 @@ footer {
   text-shadow: 1px 1px #0f0f0f;
   font-family: NSimSun;
   color: #FFFFFF;
-  padding: 2px 8px;
+  padding: 1px 8px;
   overflow: visible;
   position: absolute;
+  left: 7.5%;
   float: none;
-  font-size: 58px;
+  font-size: 2.6em;
   line-height: 64px;
+}
+
+.text {
+  width: 85%;
+  background-color: #F8F8F8F8;
+  border-radius: 10px;
+  padding: 10px;
 }
