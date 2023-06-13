@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 14px;
 }
 
 /* Body styles */
@@ -52,42 +53,6 @@ body {
   color: #006DB3;
 }
 
-.content {
-  display: flex;
-  margin-top: 20px;
-  padding: 20px;
-}
-
-.left {
-  width: 50%;
-}
-
-.right {
-  background: url("theme_1_bg_2x.0.3.png");
-  background-repeat: repeat;
-  border-radius: 5px;
-  width: 50%;
-  font-family: STXingkai;
-  writing-mode: vertical-rl;
-  padding-right: 10%;
-  padding-top: 20px;
-}
-
-.left img {
-  width: 100%;
-  height: auto;
-  margin-top: 10px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-.right p {
-  margin-bottom: 10px;
-  line-height: 3.5;
-  font-size: 23px;
-  color: #333;
-}
-
 .footer-menu {
   list-style-type: none;
   display: flex;
@@ -114,4 +79,108 @@ body {
   text-align: center;
   color: #999;
   font-size: 14px;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.main-text {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.main-text img {
+	border-radius: 5px;
+}
+
+.container-1 {
+	margin-top: 20px;
+	position: relative;
+	width: 60%;
+	height: 440px;
+	top: -100px;
+}
+
+
+
+.pic-1 {
+	position: absolute;
+	width: 55%;
+	right: 0;
+	bottom: 0;
+}
+
+.pic-2 {
+	position: absolute;
+	width: 40%;
+	left: 0;
+	bottom: 0;
+}
+
+.pic-1 img,
+.pic-2 img,
+.pic-3 img,
+.pic-4 img {
+	width: 100%;
+}
+
+.picture-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 60em;
+	overflow: hidden;
+}
+
+.picture-container img{
+	width: 100%;
+}
+
+.text-1 {
+	padding: 1em 0.2em;
+}
+
+.text-1 h1 {
+	font-size: 3em;
+	color: rgba(255,255,255,0.85);
+}
+
+.text-1 h2 {
+	font-size: 2.5em;
+}
+
+.container-2 {
+	width: 60%;
+	height: 480px;
+	position: relative;
+	top: -30px;
+}
+
+.text-2 {
+	position: absolute;
+	width: 40%;
+	bottom: 20%;
+	left: 0;
+}
+
+.text-2 p {
+	font-size: 1.2em;
+}
+
+.pic-3 {
+	position: absolute;
+	width: 30%;
+	top: 0;
+	right: 25%;
+}
+
+.pic-4 {
+	width: 23%;
+	position: absolute;
+	top: 0;
+	right: 0;
 }
