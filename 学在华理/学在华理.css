@@ -133,7 +133,7 @@ main {
 	justify-content: center;
 	align-items: center;
 	height: 60em;
-	max-height: 840px;
+	max-height: 50vw;
 	overflow: hidden;
 }
 
